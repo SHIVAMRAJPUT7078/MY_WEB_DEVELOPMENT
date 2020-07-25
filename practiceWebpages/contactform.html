@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-image: url('https://i.imgur.com/kk76J5I.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            /* background: url('https://i.imgur.com/kk76J5I.jpg') no-repeat top center; */
+        }
+
+        /* .input-fields{
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+            
+        } */
+        /* .contactform{
+            position: absolute;
+        } */
+        /* .msg{
+            position: absolute;
+            float: right;
+        } */
+
+        /* .in{
+            display: block;
+        } */
+        .container {
+            /* border: solid 2px red; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* background: rgb(189, 172, 170); */
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            width: 100%;
+            max-width: 550px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+        }
+
+        .title h1 {
+            text-align: center;
+
+            color: rgb(248, 246, 246);
+        }
+
+        .contact-form {
+            display: flex;
+        }
+
+        .input-fields {
+            width: 48%;
+            /* display: flex;
+            flex-direction: column;
+            margin-right: 4%; */
+
+        }
+        .msg {
+            width: 48%;
+            margin-top: 8%;
+            /* margin-left: 9%; */
+        }
+
+
+        .in {
+            margin-top: 34px;
+            padding: 9px; 
+            /* margin-top: 20px;
+            padding: 3px; */
+            background: none;
+            /* background: rgb(189, 172, 170); */
+            /* background: rgba(0,0,0,0.8); */
+            /* background: rgba(0,0,0,0.8); */
+            /* border: solid 2px rgb(231, 202, 202); */
+            border: none;
+            border-bottom: solid 2px gray;
+            border-radius: 3px;
+
+        }
+
+
+        .msg textarea {
+            margin-top: 0px;
+            padding: 9px;
+            /* background: rgb(189, 172, 170); */
+            /* background: rgba(0,0,0,0.8); */
+            background: none;
+            width: 200px;
+            height: 240px;
+            /* padding: 5px; */
+            /* font-size: 15px; */
+            border: none;
+            border-bottom: solid 2px grey;
+            /* font-family: sans-serif; */
+            /* size: 500px; */
+        }
+
+        .btn {
+            /* border: solid 2px red;
+            width: 100%;
+            padding: 25px; */
+            margin-top: 10px;
+            width: 90%;
+            padding: 11px;
+            border: none;
+            background: #9e60dc;
+            border-radius: 5px;
+        }
+
+        /* input:hover{
+            border: none;
+        } */
+        /* input::after{
+            border: none;
+        } */
+        /* input:checked{
+            border: none;
+
+        } */
+        @media screen and (max-width: 600px){
+      .contact-form{
+        flex-direction: column;
+      }
+      .msg textarea{
+        height: 80px;
+      }
+      .input-fields,
+      .msg{
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Contact Form</h1>
+        </div>
+        <div class="contact-form">
+            <div class="input-fields">
+                <input class="in" type="text" name="name" id="name" placeholder="Name">
+                <input class="in" type="text" name="email Adress" id="email" placeholder="Email Adress">
+                <input class="in" type="text" name="phone" id="phone" placeholder="Phone">
+                <input class="in" type="text" name="subject" id="subject" placeholder="Subject">
+            </div>
+            <div class="msg">
+                <textarea placeholder="Message"></textarea>
+                <button class="btn">Submit</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
