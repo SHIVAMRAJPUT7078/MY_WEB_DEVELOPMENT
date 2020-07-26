@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+        body{
+            /* background-image: url("https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");  */
+            background-image: url(https://images.pexels.com/photos/2055236/pexels-photo-2055236.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+            background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            border: solid 2px rebeccapurple;
+            
+            
+            /* no-repeat center fixed; */
+            /* background-attachment: fixed; */
+            /* background: url(img_man.jpg) ; */
+  /* background-size: cover; */
+            /* height: ; */
+                 /* background-position:center; */
+                /* background-repeat: no-repeat;  */
+                /* background-size: cover; */
+                /* background-size: ; */
+        }
+
+        .card {
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* border: solid 2px rgb(224, 26, 26); */
+            background: none;
+            border-radius: 5px;
+
+        }
+
+        .title,
+        .cardfooter {
+            height: 13%;
+            width: 100%;
+            background: none;
+            text-align: center;
+            align-items: center;
+        }
+
+        .title h2 {
+            text-align: center;
+        }
+
+        .card-content {
+            height: 80%;
+            width: 100%;
+        }
+
+        .content-head {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            /* justify-content:space-evenly; */
+            align-items: center;
+        }
+
+        .content-head input {
+            width: 30%;
+            height: 38%;
+            /* padding: 10px; */
+            text-align: center;
+            background: rgb(238, 233, 233);
+        }
+
+        .cardbody {
+            height: 60%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #btn-1
+         {
+            height: 30%;
+            width: 60%;
+            margin-bottom: 6%;
+            /* justify-content: center;
+            align-items: center; */
+        }
+
+        #btn-2 {
+            height: 30%;
+            width: 30%;
+            margin-bottom: 5%;
+
+        }
+
+        /* .content-head input{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        } */
+        @media (max-width: 500px) {
+            .container{
+                background-image: url(https://images.pexels.com/photos/2055236/pexels-photo-2055236.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .card{
+                height: 70%;
+                width: 70%;
+                position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+            .content-head {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            justify-content:space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content-head input {
+            width: 70%;
+            height: 25%;
+            /* padding: 10px; */
+            text-align: center;
+            background: rgb(238, 233, 233);
+        }
+        .card-content {
+            height: 74%;
+            width: 100%;
+        }
+        /* .cardbody {
+            height: 60%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } */
+            /* .card {
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: solid 2px rgb(224, 26, 26);
+            background: rgb(163, 235, 235);
+            border-radius: 5px;
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="title">
+                <h2>LOVE CALCULATOR</h2>
+            </div>
+            <div class="card-content">
+                <div class="content-head">
+                    <input type="text" name="" id="yourname" placeholder="Your name">
+                    <span><b>+</b></span>
+                    <input type="text" name="" id="lovename" placeholder="Love name">
+                </div>
+
+                <div class="cardbody">
+                    <input id="btn-1" type="submit" value="Submit">
+                    <input id="btn-2" type="submit" value="Love percentage">
+                </div>
+            </div>
+            <div class="cardfooter">
+                <p> God bless your relationship</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
